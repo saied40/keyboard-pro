@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imgs/pexels-stein-egil-liland-3374210.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container .result input {
+  background-color: #ffffff4d;
+  border: 1px solid #fff;
+  padding: 12px 15px;
+  width: 50rem;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  color: #fff;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.container .rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container .rows .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container .row .btn {
+  border: 2px solid #fff;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  padding: 8px 10px;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  background-color: #ffffff0f;
+  position: relative;
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+
+  &:hover {
+    background-color: #ffffff40;
+  }
+
+  &.click {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  &.enter {
+    width: 9rem;
+  }
+
+  &.space {
+    width: 40rem;
+  }
+}
+
+.container .row .btn p {
+  font-size: 1.6rem;
+}
+
+.container .row .btn span {
+  font-size: 1.1rem;
+  float: right;
+}
+
+@media (width < 1080px) {
+  .container .row .btn {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .container .row .btn p {
+    font-size: 1.5rem;
+  }
+  .container .row .btn span {
+    font-size: 1rem;
+  }
+}
